@@ -1,4 +1,4 @@
-import metaviewer_pyodbc as mvr 
+import metaviewer_pyodbc_lnx as mvr 
 
 print ("-----------Start Utilization Example-----------")
 

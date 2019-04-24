@@ -6,9 +6,9 @@ def printL (m):
 		print (m)
 
 class MetaViewer:
-	#linux: strConn_prod = "Driver={ODBC Driver 17 for SQL Server};Server=10.160.20.65,51261;Database=dw_motrpac;UID=mt_internal_user;PWD=se@lf0n1nt3rn@l"
-	strConn_dev = 'Driver={SQL Server};Server=10.160.20.65\SSQL_2016;Database=dw_motrpac;User=mt_internal_user;Password=se@lf0n1nt3rn@l'
-	strConn_dev = 'Driver={SQL Server};Server=localhost\sqlexpress;Database=dw_motrpac;User=mt_internal_user;Password=se@lf0n1nt3rn@l'
+	strConn_prod = "Driver={ODBC Driver 17 for SQL Server};Server=10.160.20.65,51261;Database=dw_motrpac;UID=mt_internal_user;PWD=se@lf0n1nt3rn@l"
+	#TODO: Dev connection string should be repointed to a test SQL Server when it becomes available
+	strConn_dev = "Driver={ODBC Driver 17 for SQL Server};Server=10.160.20.65,51261;Database=dw_motrpac;UID=mt_internal_user;PWD=se@lf0n1nt3rn@l"
 	strConn = ''
 	sqlproc_getMetadata = "usp_get_metadata_studies_combined_by_sids"
 	sqlproc_getMetaStudies = "select * from vw_get_study_stats"
