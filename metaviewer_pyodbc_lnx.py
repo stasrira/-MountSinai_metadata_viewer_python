@@ -14,6 +14,7 @@ class MetaViewer:
 	sqlproc_getMetaStudies = "select * from vw_get_study_stats"
 	#envir = ''
 	
+	
 	def __init__(self, envir = "development", str_conn = ""):
 		self.envir = envir
 		
@@ -40,7 +41,7 @@ class MetaViewer:
 	
 	def getMetadata (self, sample_ids):
 		#open connection and execute SQL query
-		conn = pyodbc.connect(self.strConn)
+		conn = pyodbc.connect(self.strConn, autocommit=True)
 		cursor = conn.cursor()
 		cursor.execute("exec " + self.sqlproc_getMetadata + "'" + sample_ids + "'")
 		
