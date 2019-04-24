@@ -3,7 +3,7 @@ import metaviewer_pyodbc as mvr
 print ("-----------Start Utilization Example-----------")
 
 #utilization of the MetaViewer class
-mv = mvr.MetaViewer("production")
+mv = mvr.MetaViewer("production") #"production"
 
 print (">>>>>>>>>> Metadata >>>>>>>>>>>>>>>>")
 #submit comma delimited list of sample_ids
